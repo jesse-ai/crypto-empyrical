@@ -17,13 +17,10 @@ from setuptools import setup, find_packages
 
 
 DISTNAME = "crypto_empyrical"
-VERSION = '1.0.2'
+VERSION = '1.0.4'
 DESCRIPTION = """crypto_empyrical is a fork of Quantopian's Empyrical package modified to work for 24/7 markets of cryptocurrency"""
-LONG_DESCRIPTION = """A fork of Quantopian's Empyrical package modified to work for 24/7 markets of cryptocurrency.
-
-Website: https://jesse.trade
-Docs: https://docs.jesse.trade
-"""
+with open("README.md", "r", encoding="utf-8") as f:
+    LONG_DESCRIPTION = f.read()
 MAINTAINER = "Jesse.Trade"
 MAINTAINER_EMAIL = "info@jesse.trade"
 
@@ -82,6 +79,7 @@ if __name__ == "__main__":
         license=LICENSE,
         url=URL,
         long_description=LONG_DESCRIPTION,
+        long_description_content_type="text/markdown",
         packages=find_packages(),
         classifiers=classifiers,
         install_requires=requirements,
