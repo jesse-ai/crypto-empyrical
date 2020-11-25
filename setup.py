@@ -13,25 +13,24 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-from setuptools import setup
-import versioneer
+from setuptools import setup, find_packages
 
 
-DISTNAME = "empyrical"
-DESCRIPTION = """empyrical is a Python library with performance and risk \
-statistics commonly used in quantitative finance"""
-LONG_DESCRIPTION = """empyrical is a Python library with performance and risk
-statistics commonly used in quantitative finance by `Quantopian Inc`_.
+DISTNAME = "crypto_empyrical"
+VERSION = '1.0.0'
+DESCRIPTION = """crypto_empyrical is a fork of Quantopian's Empyrical package modified to work for 24/7 markets of cryptocurrency"""
+LONG_DESCRIPTION = """A fork of Quantopian's Empyrical package modified to work for 24/7 markets of cryptocurrency.
 
-.. _Quantopian Inc: https://www.quantopian.com
-.. _Zipline: https://zipline.io
-.. _pyfolio: https://quantopian.github.io/pyfolio/
+Website: https://jesse.trade
+Docs: https://docs.jesse.trade
 """
-MAINTAINER = "Quantopian Inc"
-MAINTAINER_EMAIL = "opensource@quantopian.com"
+MAINTAINER = "Jesse.Trade"
+MAINTAINER_EMAIL = "info@jesse.trade"
+
 AUTHOR = "Quantopian Inc"
 AUTHOR_EMAIL = "opensource@quantopian.com"
-URL = "https://github.com/quantopian/empyrical"
+
+URL = "https://github.com/jesse-ai/empyrical"
 LICENSE = "Apache License, Version 2.0"
 
 classifiers = [
@@ -57,11 +56,11 @@ test_reqs = [
 
 
 requirements = [
-    'numpy>=1.9.2',
-    'pandas>=0.16.1',
-    'scipy>=0.15.1',
+    'numpy',
+    'pandas',
+    'scipy',
     'six',
-    "pandas-datareader>=0.2"
+    "pandas-datareader"
 ]
 
 extras_requirements = {
@@ -76,15 +75,14 @@ extras_requirements = {
 if __name__ == "__main__":
     setup(
         name=DISTNAME,
-        cmdclass=versioneer.get_cmdclass(),
-        version=versioneer.get_version(),
+        version=VERSION,
         maintainer=MAINTAINER,
         maintainer_email=MAINTAINER_EMAIL,
         description=DESCRIPTION,
         license=LICENSE,
         url=URL,
         long_description=LONG_DESCRIPTION,
-        packages=["empyrical", "empyrical.tests"],
+        packages=find_packages(),
         classifiers=classifiers,
         install_requires=requirements,
         extras_require=extras_requirements,
