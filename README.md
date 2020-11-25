@@ -1,4 +1,4 @@
-[![PyPI](https://img.shields.io/pypi/v/crypto_empyrical?color=%234ec726&style=flat-square)](https://pypi.org/project/empyrical/)
+[![PyPI](https://img.shields.io/pypi/v/crypto_empyrical?color=%234ec726&style=flat-square)](https://pypi.org/project/crypto_empyrical/)
 
 # crypto_empyrical
 

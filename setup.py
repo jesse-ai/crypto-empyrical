@@ -17,7 +17,7 @@ from setuptools import setup, find_packages
 
 
 DISTNAME = "crypto_empyrical"
-VERSION = '1.0.1'
+VERSION = '1.0.2'
 DESCRIPTION = """crypto_empyrical is a fork of Quantopian's Empyrical package modified to work for 24/7 markets of cryptocurrency"""
 LONG_DESCRIPTION = """A fork of Quantopian's Empyrical package modified to work for 24/7 markets of cryptocurrency.
 
