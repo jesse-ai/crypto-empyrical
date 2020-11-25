@@ -17,7 +17,7 @@ from setuptools import setup, find_packages
 
 
 DISTNAME = "crypto_empyrical"
-VERSION = '1.0.0'
+VERSION = '1.0.1'
 DESCRIPTION = """crypto_empyrical is a fork of Quantopian's Empyrical package modified to work for 24/7 markets of cryptocurrency"""
 LONG_DESCRIPTION = """A fork of Quantopian's Empyrical package modified to work for 24/7 markets of cryptocurrency.
 
@@ -30,7 +30,7 @@ MAINTAINER_EMAIL = "info@jesse.trade"
 AUTHOR = "Quantopian Inc"
 AUTHOR_EMAIL = "opensource@quantopian.com"
 
-URL = "https://github.com/jesse-ai/empyrical"
+URL = "https://github.com/jesse-ai/crypto-empyrical"
 LICENSE = "Apache License, Version 2.0"
 
 classifiers = [
